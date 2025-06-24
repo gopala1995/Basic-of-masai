@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ <style>
+        body {
+            background-color: lightgray; 
+            font-family: 'Inter', sans-serif; 
+            padding: 20px; 
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh; 
+        }
+
+      
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 100%;
+            box-sizing: border-box; 
+        }
+
+        h1 {
+            color: navy;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: darkred; 
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        #paragraph1 {
+            color: blue;
+            font-size: 20px; 
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+      
+        #paragraph2 {
+            color: green;
+            font-size: 18px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+    </style>
+
+<script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Understanding CSS Styling</h1>
+
+        <p id="paragraph1">
+            This paragraph demonstrates how to apply specific text color and font size using CSS. Here, we've set the text to a vibrant blue and a larger font size of 20 pixels. This allows us to highlight important information or simply differentiate sections of text for better readability and visual appeal.
+        </p>
+
+        <h2>Exploring Different Styles</h2>
+
+        <p id="paragraph2">
+            In contrast, this second paragraph showcases a different style, featuring green text and a slightly smaller font size of 18 pixels. By using unique IDs for each paragraph, we can target them individually with CSS rules, giving us precise control over their appearance on the web page.
+        </p>
+    </div>
+</body>
+</html>
