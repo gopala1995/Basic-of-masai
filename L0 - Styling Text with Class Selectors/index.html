@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Webpage Example</title>
+    <style>
+        
+        body {
+            background-color: lightgray; 
+            font-family: 'Inter', sans-serif; 
+            padding: 20px; 
+            margin: 0;  
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        nt presentation */
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 100%;
+            box-sizing: border-box; 
+        }
+
+                h1 {
+            color: navy;             text-align: center;
+            margin-bottom: 20px;
+        }
+
+                h2 {
+            color: darkred; 
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        graphs */
+        p {
+            font-size: 16px;            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .highlight {
+            background-color: yellow; 
+            font-weight: bold; 
+            padding: 5px 10px; 
+            border-radius: 5px;
+        }
+
+        .note {
+            font-style: italic;
+            color: darkgreen; 
+        }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Understanding CSS Styling</h1>
+
+        <p class="highlight">
+            This paragraph has a class of 'highlight' and demonstrates applying a yellow background color and bold text. Class selectors allow us to apply the same style to multiple elements or selectively style specific elements based on their assigned class.
+        </p>
+
+        <h2>Exploring Different Styles</h2>
+
+        <p class="note">
+            This second paragraph has a class of 'note' and showcases italic text with a dark green font color. Class-based styling provides great flexibility in organizing and applying styles across your webpage.
+        </p>
+
+        <p>
+            This third paragraph does not have a specific class assigned, so it will inherit the default paragraph styles, which in this case includes a font size of 16 pixels. This demonstrates how default styles apply unless overridden by more specific selectors.
+        </p>
+    </div>
+</body>
+</html>
