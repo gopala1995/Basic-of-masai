@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Webpage Example</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; 
+        }
+
+        body {
+            background-color: lightgray; 
+            font-family: 'Inter', sans-serif; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh; 
+            padding: 20px; 
+        }
+
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 100%;
+        }
+
+        #main-title {
+            font-size: 32px; 
+            color: darkblue;
+            text-align: center;
+            margin-bottom: 25px; 
+        }
+
+        #subtitle {
+            font-size: 24px; 
+            color: darkgreen; 
+            text-align: center;
+            margin-top: 20px; 
+            margin-bottom: 25px; 
+        }
+
+        
+        p {
+            font-size: 16px; 
+            line-height: 1.6;
+            padding: 10px;
+            border: 1px solid #ccc; 
+            border-radius: 5px; 
+            margin-bottom: 15px; 
+        }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 id="main-title">Welcome to My Styled Page</h1>
+
+        <h2 id="subtitle">Exploring CSS Selectors</h2>
+
+        <p>
+            This paragraph demonstrates the application of a default style to all paragraph elements. Notice the padding and the subtle border around this text, which are applied universally to all 'p' tags on the page. This approach ensures consistency in the visual presentation of similar content.
+        </p>
+
+        <p>
+            The universal selector (`*`) has been used at the very beginning of the stylesheet to reset the default margin and padding for every element. This provides a clean slate, allowing for more precise control over spacing and layout without browser-specific inconsistencies.
+        </p>
+
+        <p>
+            ID selectors, like those used for the main title and subtitle, are powerful for targeting unique elements on a page. They ensure that specific styling rules are applied to one particular element, making it distinct and easily identifiable. This method is ideal for elements that appear only once.
+        </p>
+    </div>
+</body>
+</html>
