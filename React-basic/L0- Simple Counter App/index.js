@@ -6,6 +6,7 @@ function App() {
   const handleIncrement = () => {
     setCount((prevCount) => prevCount + 1);
   };
+  
 
   const handleDecrement = () => {
     setCount((prevCount) => (prevCount > 0 ? prevCount - 1 : 0));
