@@ -32,3 +32,24 @@ console.log([...new Set(list)]);
 const unique = list.filter((items, index) => list.indexOf(items) === index);
 
 // console.log(unique)
+
+
+// Find the longest word 
+function findLongestWord(sentence) {
+  const words = sentence.split(" ");
+  let longest = "";
+
+  for (let i = 0; i < words.length; i++) {
+    if (words[i].length > longest.length) {
+      longest = words[i];
+    }
+  }
+
+  return longest;
+}
+
+console.log(findLongestWord("The quick brown fox jumps over the lazy dog"));
+// Output: "quick"
+
+console.log(findLongestWord("JavaScript is a powerful language"));
+// Output: "JavaScript"
